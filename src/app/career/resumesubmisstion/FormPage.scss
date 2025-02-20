@@ -1,0 +1,120 @@
+// Colors
+$primary-color: #e74c3c;  // Red
+$secondary-color: #000000; // Black/Dark grey
+$text-color: #d92727;
+$input-bg-color: #000000; // Dark grey for inputs
+$input-text-color: white;
+$button-bg-color: #ffffff; // Dark red for button
+$button-hover-color: #000000; // Lighter red for button hover
+$border-radius: 8px;
+$padding: 12px;
+$spacing: 20px;
+
+// Global styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: $secondary-color;
+  color: $text-color;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: $spacing;
+  font-size: 2rem;
+}
+
+// Form Container
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: $secondary-color;
+}
+
+.form {
+  background-color: #1a242f;
+  padding: $spacing;
+  width: 100%;
+  max-width: 500px;
+  border-radius: $border-radius;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+  .form-group {
+    margin-bottom: $spacing;
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    input, select {
+      width: 100%;
+      padding: $padding;
+      border: 1px solid #34495e;
+      background-color: $input-bg-color;
+      color: $input-text-color;
+      border-radius: $border-radius;
+      font-size: 1rem;
+    }
+
+    input[type="file"] {
+      padding: 10px;
+    }
+
+    select {
+      appearance: none;
+      background-color: $input-bg-color;
+    }
+
+    input:focus, select:focus {
+      outline: none;
+      border-color: $primary-color;
+    }
+  }
+
+  .submit-btn {
+    width: 100%;
+    padding: $padding;
+    background-color: $button-bg-color;
+    border: none;
+    color: $text-color;
+    font-size: 1.1rem;
+    border-radius: $border-radius;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: $button-hover-color;
+    }
+  }
+}
+
+// Media Queries for Responsiveness
+@media (max-width: 768px) {
+  .form {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .form {
+    width: 95%;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+}

@@ -1,0 +1,10 @@
+.service_banner {
+  position: relative;
+  z-index: 1;
+  background-image: url(/images/banners/bnr-4.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.service_banner__container {
+  min-height: 300px;
+}/*# sourceMappingURL=styles.module.css.map */

@@ -1,0 +1,40 @@
+.navContainer {
+  padding: 2rem;
+  background-color: #181a19;
+  z-index: 10000;
+  border-radius: 30px;
+}
+
+h3{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 4rem;
+  border: none;
+}
+.ul li h3 ul Link li:hover {
+  background-color: #444444!important;
+}
+
+.li {
+  list-style-type: circle;
+  margin-left: 3rem;
+  font-size: 20px;
+  max-lines: none;
+  border: none;
+}
+
+.listhover:hover{
+    background-color: transparent!important;
+
+}
+.listhover Link:hover{
+    background-color: transparent!important;
+
+}
